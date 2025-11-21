@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note dApp</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Note dApp</h1>
+        <p>You can write notes and read notes from smart contract</p>
+        
+        <button id="connectButton">Connect Wallet</button>
+        <span id="walletStatus" style="margin-left: 10px; color: green;"></span>
+        <br /><br />
+        
+        <label for="note">Write note:</label>
+        <input type="text" id="note" />
+        <button id="setNoteButton">Set Note</button>
+        <button id="getNoteButton">Get Note</button>
+        
+        <p>My note: <span id="result"></span></p>
+        <p id="transactionStatus"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
