@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS GAMING</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h3>Rock Paper Scissors</h3>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p><del>Gambling!!!</del> I MEAN <ins>GAMING!!!</ins></p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="images/rock.png" alt="">
+        </div>
+
+        <div class="choice" id="p">
+            <img src="images/paper.png" alt="">
+        </div>
+
+        <div class="choice" id="s">
+            <img src="images/scissors.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="betting-section">
+        <label for="betAmount">Bet Amount (tBNB):</label>
+        <input type="number" id="betAmount" step="0.0001" min="0.0001" max="0.01" value="0.0001"
+            placeholder="Enter bet amount">
+        <div class="bet-info">
+            <small>Min: 0.0001 tBNB | Max: 0.01 tBNB</small>
+        </div>
+    </div>
+
+    <p id="action-msg">Make your move.</p>
+    <button class="connectBtn" id="connectBtn">Connect Wallet</button>
+    <script src="app.js" charset="utf-8"></script>
+
+</body>
+
+</html>
